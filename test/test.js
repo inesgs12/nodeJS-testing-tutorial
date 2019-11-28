@@ -11,23 +11,26 @@ const assert = require("assert");
 // BEFORE EACH AND AFTER EACH happen before each test inside a block
 // Allow you to create subs and variables that are needed for the tests.
 
+// CHAI is an assertion library 
+// It has 3 styles: should, expect, and assert. They all do the same thing, it depends on your preference. Should seems more hard to work with. 
+
 describe("file to be tested", () => {
   context("function to execute", () => {
-    before(() => {
-      console.log("=======before");
-    });
+    // before(() => {
+    //   console.log("=======before");
+    // });
 
-    after(() => {
-      console.log("=======after");
-    });
+    // after(() => {
+    //   console.log("=======after");
+    // });
 
-    beforeEach(() => {
-      console.log("=======beforeEach");
-    });
+    // beforeEach(() => {
+    //   console.log("=======beforeEach");
+    // });
 
-    afterEach(() => {
-      console.log("=======afterEach");
-    });
+    // afterEach(() => {
+    //   console.log("=======afterEach");
+    // });
     it("should do something", () => {
       assert.equal(1, 1);
     });
@@ -37,5 +40,9 @@ describe("file to be tested", () => {
     });
 
     it("this is a pending test");
+  });
+
+  context("another function", () => {
+    it("should do something");
   });
 });
