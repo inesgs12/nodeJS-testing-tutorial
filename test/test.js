@@ -11,8 +11,10 @@ const assert = require("assert");
 // BEFORE EACH AND AFTER EACH happen before each test inside a block
 // Allow you to create subs and variables that are needed for the tests.
 
-// CHAI is an assertion library 
-// It has 3 styles: should, expect, and assert. They all do the same thing, it depends on your preference. Should seems more hard to work with. 
+// CHAI is an assertion library
+// It has 3 styles: should, expect, and assert. They all do the same thing, it depends on your preference. Should seems more hard to work with.
+
+//sinon is for test doubles. They are functions that we can inject into our function in the form of spies or stubs, they will leet us know what is happening inside or behind the scenes. We can stub a function completely, to isolate the code you are testing. Isolating the code is the number one thing in unit testing.
 
 describe("file to be tested", () => {
   context("function to execute", () => {
